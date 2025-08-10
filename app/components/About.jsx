@@ -47,19 +47,31 @@ const About = ({ isDarkMode }) => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
             className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
-            {infoList.map(({ icon, iconDark, title, description, image1, image2 }, index) => (
+            {infoList.map((item, index) => (  
               <motion.li
                 whileHover={{ scale: 1.05 }}
                 className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[var(--lightHover)] hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 ' key={index}>
-                <Image src={isDarkMode ? iconDark : icon} alt={title} className='w-7 mt-3' />
-                 <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>{title}</h3>
-                <div className='bg-white-200 flex flex-row items-center gap-6 mb-2'>
-                  <Image src={image1} alt={image1} className='w-17 mt-3' />
-                   <Image src={image2} alt={image2} className='w-7 mt-3' />
-                </div>
+                <Image src={isDarkMode ? item.iconDark : item.icon} alt={item.title} className='w-7 mt-3' />
+                 <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>{item.title}</h3>
+                
+                 <div key={index} className='bg-white-200 flex flex-row items-center gap-6 mb-2'>
+        {item.image1 && (
+            <Image 
+                src={item.image1} 
+                alt={item.image1Alt || 'Dekorativna slika'} 
+                className='w-17 mt-3' 
+            />
+        )}
+        {item.image2 && (
+            <Image 
+                src={item.image2} 
+                alt={item.image2Alt || 'Dekorativna slika'} 
+                className='w-7 mt-3' 
+            />
+        )}
+               </div>
                
-               
-                <p className='text-gray-600 text-sm dark:text-white/80'>{description}</p>
+                <p className='text-gray-600 text-sm dark:text-white/80'>{item.description}</p>
               </motion.li>
             ))}
           </motion.ul>
