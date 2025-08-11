@@ -72,7 +72,7 @@ const About = ({ isDarkMode }) => {
         )}
                </div>
                
-                <p href="#work" className='text-gray-600 text-sm dark:text-white/80'>{item.description}</p>
+                <p  className='text-gray-600 text-sm dark:text-white/80'><a  href="#work"></a>{item.description}</p>
               </motion.li>
             ))}
           </motion.ul>

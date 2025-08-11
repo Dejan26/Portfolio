@@ -116,7 +116,7 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js, Node Ja' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js, Node Js' },
     // { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education',image1: assets.itaIkonica ,image2: assets.enonSolutionsIkonica, description: '10-week internship at ENON Solutions and completed IT Academy (one-year course)',  image1Alt: 'Logo IT Akademije', image2Alt: 'Logo ENON Solutions', },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
