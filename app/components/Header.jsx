@@ -14,14 +14,14 @@ const Header = () => {
 
             <motion.h3 initial={{ y: -20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.6, delay: 0.3 }} className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-ovo'>Hi I'm Dejan Mirkovic <Image src={assets.hand_icon} alt='' className='w-6' /></motion.h3>
+                transition={{ duration: 0.6, delay: 0.3 }} className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-ovo'>I'm Dejan Mirkovic <Image src={assets.hand_icon} alt='' className='w-6' /></motion.h3>
             <motion.h1 initial={{ y: -30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.5 }} className='text-3xl sm:text-6xl lg:text-[66px] font-ovo'>Frontent web developer based in Sabac.</motion.h1 >
+                transition={{ duration: 0.8, delay: 0.5 }} className='text-3xl sm:text-5xl lg:text-[66px] font-ovo'>Frontent web developer</motion.h1 >
             <motion.p initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.7 }} className='max-w-2xl mx -auto font-ovo'>
-                I am a frontend developer from Sabac, Serbia with 2 years of experience.
+                I am a frontend developer from Šabac, Serbia with about 2 years of experience in creating websites.
             </motion.p>
 
             <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
