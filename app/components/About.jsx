@@ -4,6 +4,9 @@ import React from 'react'
 import { motion } from "motion/react"
 
 const About = ({ isDarkMode }) => {
+  
+
+  
   return (
     <motion.div id='about' className='w-full px-[12%] py-10 scroll-mt-20'
       initial={{ opacity: 0 }}
@@ -48,8 +51,11 @@ const About = ({ isDarkMode }) => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
             className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
-            {infoList.map((item, index) => (  
+            {infoList.map((item, index) => {
+              const isLast = index === infoList.length - 1;
+             return (  
               <motion.li
+                onClick={isLast ? () => window.location.href = "#work" : undefined}
                 whileHover={{ scale: 1.05 }}
                 className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[var(--lightHover)] hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 ' key={index}>
                 <Image src={isDarkMode ? item.iconDark : item.icon} alt={item.title} className='w-7 mt-3' />
@@ -72,9 +78,9 @@ const About = ({ isDarkMode }) => {
         )}
                </div>
                
-                <p  className='text-gray-600 text-sm dark:text-white/80'><a  href="#work"></a>{item.description}</p>
+                <p  className='text-gray-600 text-sm dark:text-white/80'>{item.description}</p>
               </motion.li>
-            ))}
+            )})}
           </motion.ul>
 
           <motion.h4

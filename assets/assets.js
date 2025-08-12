@@ -37,11 +37,15 @@ import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import zaCVSlika from './ZaCVSlika.jpg';
 import itaIkonica from './it-akademija.jpg';
-import enonSolutionsIkonica from './enonSolutionslogo.jpg'
-import jaPlava from './JaPlava.png'
+import enonSolutionsIkonica from './enonSolutionslogo.jpg';
+import jaPlava from './JaPlava.png';
+
+
+
 
 
 export const assets = {
+
     jaPlava,
     enonSolutionsIkonica,
     itaIkonica,
@@ -87,25 +91,24 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        title: 'Catering site',
+        description: 'ReactJS + Firebase',
+        bgImage: '/LogoVera4.png',
+        url: 'https://keteringsabac.rs/'
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
+        title: 'Food Delivery',
+        description: 'MongoDB Express ReactJs Node.js',
+        bgImage: '/tomatoPngTr.png',
+        url: 'https://food-del-frontend-21eu.onrender.com/'
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
+        title: 'Quiz',
+        description: 'VueJs MySql',
+        bgImage: '/quiz-png.png',
+        url: 'http://654h122.e2.mars-hosting.com/'
     },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
-    },
+    
 ]
 
 export const serviceData = [
@@ -118,7 +121,7 @@ export const serviceData = [
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js, Node Js' },
     // { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education',image1: assets.itaIkonica ,image2: assets.enonSolutionsIkonica, description: '10-week internship at ENON Solutions and completed IT Academy (one-year course)',  image1Alt: 'Logo IT Akademije', image2Alt: 'Logo ENON Solutions', },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', image1: assets.itaIkonica, image2: assets.enonSolutionsIkonica, description: '10-week internship at ENON Solutions and completed IT Academy (one-year course)', image1Alt: 'Logo IT Akademije', image2Alt: 'Logo ENON Solutions', },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 

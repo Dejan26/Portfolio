@@ -28,10 +28,10 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
     return (
         <>
-            <div className='fixed top-0 right-0 w-12/12 -z-10 translate-y-[-80%] dark:hidden'>
+            <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden'>
                 <div className="relative w-full">
                     <Image src={assets.header_bg_color} alt='' className='w-full' />
-                    <div className="absolute inset-0 bg-gradient-to-t from-white/80 to-white" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-white/75 to-white" />
                 </div>
             </div>
 
